@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="proyecto4"> <!--Directiva-->
+  <head>
+  <meta charset ="utf-8">
+  <title>Uso De Scope Con Controladores en JS</title>
+
+  </head>
+
+  <body ng-controller="controladorBasico">
+
+  <div ng_repeat="perrito in superDogs">
+  <img src="images/{{perrito.foto}}"/>
+  <h2>Hola mi nombre es {{perrito.nombre}}.</h2>
+  <h3>Tengo {{perrito.edad}} años.</h3>
+  </div>
+
+  <script type="text/javascript" src="scripts/angular.min.js"></script>
+  <!--build:js scripts/main.min.js-->
+  <script type="text/javascript" src="scripts/myApp.js"></script>
+  <!--endbuild-->
+  </body>
+</html>
